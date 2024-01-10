@@ -152,7 +152,7 @@ This script queries all available features and prints them into the log.
 ## Legal
 - Viessmann and Vitoconnect are registered Trademarks of the Viessmann Werke GmbH & Co. KG. 
 
-- This project is a private project and is *not* offically supported or endorsed by the Viessmann Werke GmbH & Co. KG, use at your own risk.
+- This project is a private project and is *not* officially supported or endorsed by the Viessmann Werke GmbH & Co. KG, use at your own risk.
 
 - In case you have any questions, please contact me via github!
 
