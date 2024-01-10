@@ -24,7 +24,7 @@
 <script type="text/javascript">
 
     // the function loadSettings has to exist ...
-    function load(settings, onChange) {
+    function load(settings = {}, onChange) {
         // example: select elements with id=key and class=value and insert value
        if (!settings) return;
         $('.value').each(function () {            
@@ -52,7 +52,7 @@
     // you have to make sure the callback is called with the settings object as first param!
     function save(callback) {
         // example: select elements with class=value and build settings object
-        var obj = {};
+        var obj = {settings: {}};
         $('.value').each(function () {
             var $this = $(this);
             if ($this.attr('type') === 'checkbox') {
