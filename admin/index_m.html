@@ -24,7 +24,7 @@
 <script type="text/javascript">
 
     // the function loadSettings has to exist ...
-    function load(settings, onChange) {
+    function loadSettings(settings, onChange) {
         // example: select elements with id=key and class=value and insert value
        if (!settings) return;
         $('.value').each(function () {            
@@ -33,7 +33,7 @@
             if ($key.attr('type') === 'checkbox') {
 		        // do not call onChange direct, because onChange could expect some arguments
                 $key.prop('checked', settings[id]).on('change', function() {
-                    onChange();
+                    onChange(settings);
                 });
             } else {
 		        // do not call onChange direct, because onChange could expect some arguments
@@ -45,12 +45,12 @@
             }
         });
         onChange(false);
-        M.updateTextFields();  // function Materialize.updateTextFields(); to reinitialize all the Materialize labels on the page if you are dynamically adding inputs.
+        M.updateTextFields(); // Reinitialize Materialize labels  // function Materialize.updateTextFields(); to reinitialize all the Materialize labels on the page if you are dynamically adding inputs.
     }
 
     // ... and the function save has to exist.
     // you have to make sure the callback is called with the settings object as first param!
-    function save(callback) {
+    function saveSettings(callback) {
         // example: select elements with class=value and build settings object
         var obj = {};
         $('.value').each(function () {
