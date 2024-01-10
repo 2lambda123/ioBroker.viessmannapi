@@ -131,6 +131,8 @@ This script queries all available features and prints them into the log.
 * (thovid) Updated the changelog to include the latest changes made to the repository.
 ### 1.5.0 (2022/12/01)
 * (thovid) Updated the changelog to include the latest changes made to the repository.
+### 1.5.0 (2022/12/01)
+* (thovid) Updated the changelog to include the latest changes made to the repository.
 ### 1.4.0 (2022/12/01)
 * (thovid) Updated the changelog to include the latest changes made to the repository.
 ### 1.5.0 (2022/12/01)
@@ -148,6 +150,8 @@ This script queries all available features and prints them into the log.
 * (thovid) Uses npm released version of client lib, so no longer requires git upon installation
 ### 1.0.0 (2018/12/07)
 * (thovid) Initial adapter
+### 1.5.0 (2022/12/01)
+* (thovid) Updated the changelog to include the latest changes made to the repository.
 
 ## Legal
 - Viessmann and Vitoconnect are registered Trademarks of the Viessmann Werke GmbH & Co. KG. 
