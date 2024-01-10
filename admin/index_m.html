@@ -24,7 +24,8 @@
 <script type="text/javascript">
 
     // the function loadSettings has to exist ...
-    function load(settings, onChange) {
+    // Load function to read settings and update the UI
+function load(settings, onChange) {
         // example: select elements with id=key and class=value and insert value
        if (!settings) return;
         $('.value').each(function () {            
@@ -32,12 +33,14 @@
             var id = $key.attr('id');
             if ($key.attr('type') === 'checkbox') {
 		        // do not call onChange direct, because onChange could expect some arguments
-                $key.prop('checked', settings[id]).on('change', function() {
+                // Call onChange when the checked state changes
+$key.prop('checked', settings[id]).on('change', function() {
                     onChange();
                 });
             } else {
 		        // do not call onChange direct, because onChange could expect some arguments
-                $key.val(settings[id]).on('change', function() {
+                // Call onChange when the value changes
+$key.val(settings[id]).on('change', function() {
                     onChange();
                 }).on('keyup', function() {
                     onChange();
@@ -50,7 +53,8 @@
 
     // ... and the function save has to exist.
     // you have to make sure the callback is called with the settings object as first param!
-    function save(callback) {
+    // Save function to save settings and call the callback with the updated settings
+function save(callback) {
         // example: select elements with class=value and build settings object
         var obj = {};
         $('.value').each(function () {
@@ -61,12 +65,13 @@
                 obj[$this.attr('id')] = $this.val();
             }
         });
+        // Call the callback with the updated settings
         callback(obj);
     }
 </script>
 </head>
 <body>
-    <!-- you have to put your config page in a div with id adapter-container -->
+    <!-- The config page should be placed in a div with id adapter-container -->
     <div class="m adapter-container">
         <div class="row">
             <!-- Forms are the standard way to receive user inputted data.
