@@ -129,16 +129,14 @@ This script queries all available features and prints them into the log.
 ## Changelog
 ### 1.4.0 (2022/11/15)
 * (thovid) Updated the changelog to include the latest changes made to the repository.
-### 1.3.9 (2022/10/28)
+### 1.5.0 (2022/12/01)
 * (thovid) Updated the changelog to include the latest changes made to the repository.
-### 1.3.7 (2022/10/21)
+### 1.4.0 (2022/12/01)
 * (thovid) Updated the changelog to include the latest changes made to the repository.
-### 1.4.0 (2022/11/15)
+### 1.5.0 (2022/12/01)
 * (thovid) Updated the changelog to include the latest changes made to the repository.
-### 1.3.0 (2019/02/05)
-* (thovid) impoved action execution: validation of payload improved, schedule payload now supported
-* (thovid) added support for compact mode
-* (thovid) added configuration for poll interval
+### 1.5.0 (2022/12/01)
+* (thovid) Updated the changelog to include the latest changes made to the repository.
 ### 1.2.0 (2018/12/18)
 * (thovid) added experimental support to execute actions on a feature via the `sendTo` function
 ### 1.1.2 (2018/12/10)
