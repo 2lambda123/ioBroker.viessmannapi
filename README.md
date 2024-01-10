@@ -1,4 +1,16 @@
-[![Build Status](https://travis-ci.org/thovid/ioBroker.viessmannapi.svg?branch=master)](https://travis-ci.org/thovid/ioBroker.viessmannapi)
+## Troubleshooting
+If you encounter any issues during installation or usage, you can refer to the following tips to resolve common problems:
+
+- Check the adapter logs for error messages or warnings.
+- Make sure the Viessmann system is connected to the Vitoconnect or a similar device.
+- Verify that the Viessmann account username and password are entered correctly in the adapter settings.
+- Ensure that the poll interval is set within the recommended limits to avoid rate limiting by the Viessmann API.
+
+## Reporting Issues
+To report any issues or bugs, please create a new GitHub issue at [repository_issues_link]. Provide detailed information about the problem, including adapter logs, error messages, and steps to reproduce the issue.
+
+## Contributing
+You can contribute to the development of this adapter by creating pull requests and contributing to discussions on the GitHub repository. Your contributions are valuable in enhancing the functionality and stability of the adapter.[![Build Status](https://travis-ci.org/thovid/ioBroker.viessmannapi.svg?branch=master)](https://travis-ci.org/thovid/ioBroker.viessmannapi)
 ![Number of Installations](http://iobroker.live/badges/viessmannapi-installed.svg)
 
 ![Logo](admin/viessmannapi.png)
@@ -12,8 +24,14 @@ This adapter connects your ioBroker system to your Viessmann central heating via
 
 Note that this is a private project, so use at your own risk. It is not supported or endorsed by Viessmann!
 
+## Overview
+This adapter connects your ioBroker system to your Viessmann central heating via the Viessmann API. It requires your heating system to be connected to the Viessmann Server via a Vitoconnect or similar device. The adapter polls enabled information provided by the API periodically and writes it into states.
+
 ## Installation
-As this adapter is in an early development stage, installation can be done via the ioBroker 'latest' repository. On adapter settings, enter user name and password of your Viessmann account. If everything goes well, you should see states appear under `viessmannapi.X`. First values should arrive after 60 seconds.
+As this adapter is in an early development stage, installation can be done via the ioBroker 'latest' repository. On adapter settings, enter user name and password of your Viessmann account. If everything goes well, you should see states appear under `viessmannapi.X`. Follow these steps to install the adapter on ioBroker:
+1. Open the ioBroker 'latest' repository.
+2. Go to adapter settings and enter your Viessmann account username and password.
+3. Verify that states appear under `viessmannapi.X` within 60 seconds of installation.
 
 ## States
 The specific states may depend on your installation. Examples are
