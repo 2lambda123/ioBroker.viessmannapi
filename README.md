@@ -13,6 +13,15 @@ This adapter connects your ioBroker system to your Viessmann central heating via
 Note that this is a private project, so use at your own risk. It is not supported or endorsed by Viessmann!
 
 ## Installation
+
+## GitHub Actions Workflow
+
+To run the GitHub Actions workflow, follow these steps:
+1. Fork the repository to your GitHub account.
+2. Navigate to the 'Actions' tab in the forked repository.
+3. Set up the required secrets and environment variables as specified in the repository.
+4. Trigger the workflow by pushing a new commit to the repository.
+5. Monitor the workflow runs in the 'Actions' tab to check for successful execution.
 As this adapter is in an early development stage, installation can be done via the ioBroker 'latest' repository. On adapter settings, enter user name and password of your Viessmann account. If everything goes well, you should see states appear under `viessmannapi.X`. First values should arrive after 60 seconds.
 
 ## States
@@ -149,14 +158,37 @@ This script queries all available features and prints them into the log.
 ### 1.0.0 (2018/12/07)
 * (thovid) Initial adapter
 
-## Legal
+## How to Contribute and Report Issues
+
+We welcome contributions to the project and encourage users to report issues. Here's how you can contribute and report issues:
+- To contribute to the project, fork the repository, make changes, and open a pull request with your proposed changes.
+- If you encounter any issues or bugs, please visit the GitHub repository and open a detailed issue describing the problem.
 - Viessmann and Vitoconnect are registered Trademarks of the Viessmann Werke GmbH & Co. KG. 
 
 - This project is a private project and is *not* officially supported or endorsed by the Viessmann Werke GmbH & Co. KG, use at your own risk.
 
-- In case you have any questions, please contact me via github!
+**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**
 
-## License
+**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**
+
+## Troubleshooting and Error Logs
+
+To troubleshoot common issues and access error logs, follow these steps:
+1. Check the GitHub Actions workflow runs for any error messages or failures.
+2. Look for detailed error logs and information in the workflow run logs.
+3. If the issue persists, visit the GitHub repository for this project and open an issue with a detailed description of the problem and relevant error logs.
+
+- In case you have any further questions, please feel free to contact me via GitHub.
+
+## Troubleshooting Guide
+
+This guide provides instructions for troubleshooting common issues and accessing error logs in the ioBroker.viessmannapi project.
+
+**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**
+
+**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**
+
+**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**\n\nThis guide provides instructions for troubleshooting common issues and accessing error logs in the ioBroker.viessmannapi project.\n\n**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**\n\n## Troubleshooting Guide\n\nThis guide provides instructions for troubleshooting common issues and accessing error logs in the ioBroker.viessmannapi project.\n\n**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**\n\n## License
 The MIT License (MIT)
 
 Copyright (c) 2018 Thomas Vidic
