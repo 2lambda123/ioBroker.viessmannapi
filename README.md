@@ -6,7 +6,7 @@
 # ioBroker.viessmannapi
  =================
  
- **Note that as of March 2020, Viessmann has implemented some rate limiting for their API. Currently, the limits are 120 calls for a time window of 10 minutes and 1450 calls for a time window of 24 hours (see https://www.viessmann-community.com/t5/Experten-fragen/Q-amp-A-Viessmann-API/qaq-p/127660/comment-id/117660#M117660). For this reason, the poll intervall is set to 900 seconds. You can change it via the adpater configuration at your own risk. If too many calls are made in a short timeframe, your viessmann account is blocked for some time. This prevents access via the official Viessmann App as well!**
+ **Note that as of March 2020, Viessmann has implemented some rate limiting for their API. As of October 2021, the limits are 100 calls for a time window of 10 minutes and 1200 calls for a time window of 24 hours. Exceeding these limits may result in temporary blocking of your Viessmann account and restricted access via the official Viessmann App. (see https://www.viessmann-community.com/t5/Experten-fragen/Q-amp-A-Viessmann-API/qaq-p/127660/comment-id/117660#M117660). For this reason, the poll intervall is set to 900 seconds. You can change it via the adpater configuration at your own risk. If too many calls are made in a short timeframe, your viessmann account is blocked for some time. This prevents access via the official Viessmann App as well!**
 
 This adapter connects your ioBroker system to your Viessmann central heating via the Viessmann API. It requires your heating system to be connected to the Viessmann Server via a Vitoconnect or similar device. All enabled information provided by the API is polled periodically (every 60 sec) and written into states.
 
