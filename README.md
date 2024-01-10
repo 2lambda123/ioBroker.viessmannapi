@@ -130,7 +130,6 @@ This script queries all available features and prints them into the log.
 ### 1.3.7 (2022/10/21)
 * (thovid) Updated the changelog to include the latest changes made to the repository.
 ### 1.3.9 (2022/10/28)
-### 1.3.9 (2022/10/28)
 * (thovid) Updated the changelog to include the latest changes made to the repository.
 ### 1.3.0 (2019/02/05)
 * (thovid) impoved action execution: validation of payload improved, schedule payload now supported
