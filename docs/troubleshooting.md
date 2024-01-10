@@ -2,7 +2,7 @@
 
 This guide provides instructions for troubleshooting common issues and accessing error logs in the ioBroker.viessmannapi project.
 
-## Common Issues
+## Common Issues\n\n## Checking GitHub Actions Workflow Runs\n\nTo check the GitHub Actions workflow runs in the ioBroker.viessmannapi project, follow these steps:\n1. Step 1 of checking GitHub Actions workflow runs.\n2. Step 2 of checking GitHub Actions workflow runs.\n3. Step 3 of checking GitHub Actions workflow runs.\n\n## Accessing Error Logs\n\nTo access error logs in the ioBroker.viessmannapi project, follow these steps:\n1. Step 1 of accessing error logs.\n2. Step 2 of accessing error logs.\n3. Step 3 of accessing error logs.\n\n## Opening an Issue on GitHub\n\nTo open an issue on the GitHub repository, follow these steps:\n1. Step 1 of opening an issue on GitHub.\n2. Step 2 of opening an issue on GitHub.\n3. Step 3 of opening an issue on GitHub.
 
 ### Issue 1: [Description of Issue 1]
 
