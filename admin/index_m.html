@@ -21,11 +21,11 @@
      }
  </style>
 <!-- you have to define 2 functions in the global scope: -->
-<script type="text/javascript">
+<script>
 
     // the function loadSettings has to exist ...
     function load(settings, onChange) {
-        // example: select elements with id=key and class=value and insert value
+        // example: select elements with id = " key and class=value and insert value
        if (!settings) return;
         $('.value').each(function () {            
             var $key = $(this);
