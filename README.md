@@ -127,7 +127,7 @@ This script queries all available features and prints them into the log.
 - This adapter might be in the early development, and any bugs should be reported on github (https://github.com/thovid/ioBroker.viessmannapi/issues).
 
 ## Changelog
-### 1.3.4 (2022/10/15)
+### 1.3.7 (2022/10/21)
 * (thovid) Updated the changelog to include the latest changes made to the repository.
 ### 1.3.0 (2019/02/05)
 * (thovid) impoved action execution: validation of payload improved, schedule payload now supported
