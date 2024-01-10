@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/thovid/ioBroker.viessmannapi.svg?branch=master)](https://travis-ci.org/thovid/ioBroker.viessmannapi)
+```[Sweep GHA Fix] The GitHub Actions run failed with the following error logs:
+
+```[![Build Status](https://travis-ci.org/thovid/ioBroker.viessmannapi.svg?branch=master)](https://travis-ci.org/thovid/ioBroker.viessmannapi)
 ![Number of Installations](http://iobroker.live/badges/viessmannapi-installed.svg)
 
 ![Logo](admin/viessmannapi.png)
@@ -127,6 +129,9 @@ This script queries all available features and prints them into the log.
 - This adpater is in early development! Expect bugs, and feel free to report bugs here on github (https://github.com/thovid/ioBroker.viessmannapi/issues").
 
 ## Changelog
+### 1.3.4 (2021/10/01)
+* (thovid) Fixed GitHub Actions run failure
+
 ### 1.3.3 (2020/03/23)
 * (thovid) Updated dependencies, set default poll intervall to 900 s due to rate limiting of the viessmann api
 ### 1.3.2 (2019/02/10)
