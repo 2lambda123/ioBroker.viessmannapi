@@ -28,8 +28,8 @@
         // example: select elements with id=key and class=value and insert value
        if (!settings) return;
         $('.value').each(function () {            
-            var $key = $(this);
-            var id = $key.attr('id');
+            let $key = $(this);
+            let id = $key.attr('id');
             if ($key.attr('type') === 'checkbox') {
 		        // do not call onChange direct, because onChange could expect some arguments
                 $key.prop('checked', settings[id]).on('change', function() {
@@ -54,7 +54,7 @@
         // example: select elements with class=value and build settings object
         var obj = {};
         $('.value').each(function () {
-            var $this = $(this);
+            let $this = $(this);
             if ($this.attr('type') === 'checkbox') {
                 obj[$this.attr('id')] = $this.prop('checked');
             } else {
