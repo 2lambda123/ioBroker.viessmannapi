@@ -52,16 +52,12 @@
     // you have to make sure the callback is called with the settings object as first param!
     function save(callback) {
         // example: select elements with class=value and build settings object
-        var obj = {};
+        let settings = {};
         $('.value').each(function () {
             let $this = $(this);
-            if ($this.attr('type') === 'checkbox') {
-                obj[$this.attr('id')] = $this.prop('checked');
-            } else {
-                obj[$this.attr('id')] = $this.val();
-            }
+            settings[$this.attr('id')] = $this.attr('type') === 'checkbox' ? $this.prop('checked') : $this.val();
         });
-        callback(obj);
+        callback(settings);
     }
 </script>
 </head>
