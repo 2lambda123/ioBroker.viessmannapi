@@ -6,6 +6,12 @@
 
 <script type="text/javascript" src="../../lib/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../../socket.io/socket.io.js"></script>
+<script type="text/javascript">
+    // Function to handle error on failed save
+    function errorCallback(message) {
+        M.toast({html: 'Save failed: ' + message});
+    }
+</script>
 
 <!-- these files always have to be included -->
 <script type="text/javascript" src="../../js/translate.js"></script>
@@ -51,6 +57,25 @@
     }
 
     // ... and the function save has to exist.
+    function save(callback, errorCallback) {
+        // example: select elements with class=value and build settings object
+        var obj = {};
+        $('.value').each(function () {
+            var $this = $(this);
+            if ($this.attr('type') === 'checkbox' || $this.hasClass('validate') && !$this[0].checkValidity()) {
+                errorCallback('Invalid input');
+            } else {
+                if ($this.attr('type') === 'checkbox') {
+                    obj[$this.attr('id')] = $this.prop('checked');
+                } else {
+                    obj[$this.attr('id')] = $this.val();
+                }
+            }
+        });
+        setTimeout(function() {
+            callback(obj);
+        }, 1000);
+    }
     // you have to make sure the callback is called with the settings object as first param!
     function save(callback) {
         // example: select elements with class=value and build settings object
@@ -92,7 +117,7 @@
             </div>
             <div class="row">
                 <div class="input-field col s12 m6 l4">
-                    <input id="pollInterval" type="number" class="value validate">
+                    <input id="pollInterval" type="number" class="value validate" required>
                     <label for="pollInterval" data-error="wrong" data-success="right">Aktualisierungsintervall</label>
                     <span class="translate">Poll interval in seconds</span>
                 </div>
