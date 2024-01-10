@@ -41,6 +41,8 @@
                     onChange();
                 }).on('keyup', function() {
                     onChange();
+                }).on('invalid', function() {
+                    M.toast({html: 'Invalid input'});
                 });
             }
         });
@@ -93,6 +95,22 @@
                     <input id="pollInterval" type="number" class="value validate">
                     <label for="pollInterval" data-error="wrong" data-success="right">Aktualisierungsintervall</label>
                     <span class="translate">Poll interval in seconds</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="translate">on save adapter restarts with new config immediately</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+                <div class="input-field col s12 m6 l4">
+                    <input id="pollInterval" type="number" class="value validate">
+                    <label for="pollInterval" data-error="wrong" data-success="right">Aktualisierungsintervall</label>
+                    <span class="translate">Poll interval in seconds</span>
+                    <span class="helper-text" data-error="Invalid input" data-success=""></span>
                 </div>
             </div>
             <div class="row">
