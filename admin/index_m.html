@@ -6,6 +6,12 @@
 
 <script type="text/javascript" src="../../lib/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="../../socket.io/socket.io.js"></script>
+<script type="text/javascript">
+    // Function to handle error on failed save
+    function errorCallback(message) {
+        M.toast({html: 'Save failed: ' + message});
+    }
+</script>
 
 <!-- these files always have to be included -->
 <script type="text/javascript" src="../../js/translate.js"></script>
@@ -41,6 +47,8 @@
                     onChange();
                 }).on('keyup', function() {
                     onChange();
+                }).on('invalid', function() {
+                    M.toast({html: 'Invalid input'});
                 });
             }
         });
@@ -49,6 +57,25 @@
     }
 
     // ... and the function save has to exist.
+    function save(callback, errorCallback) {
+        // example: select elements with class=value and build settings object
+        var obj = {};
+        $('.value').each(function () {
+            var $this = $(this);
+            if ($this.attr('type') === 'checkbox' || $this.hasClass('validate') && !$this[0].checkValidity()) {
+                errorCallback('Invalid input');
+            } else {
+                if ($this.attr('type') === 'checkbox') {
+                    obj[$this.attr('id')] = $this.prop('checked');
+                } else {
+                    obj[$this.attr('id')] = $this.val();
+                }
+            }
+        });
+        setTimeout(function() {
+            callback(obj);
+        }, 1000);
+    }
     // you have to make sure the callback is called with the settings object as first param!
     function save(callback) {
         // example: select elements with class=value and build settings object
@@ -67,7 +94,9 @@
 </head>
 <body>
     <!-- you have to put your config page in a div with id adapter-container -->
-    <div class="m adapter-container">
+    <div class="m adapter-container" style="background-color: #ffcccc; padding: 10px; margin-bottom: 10px; border: 1px solid #ff0000;">
+      <div id="error-message-container"></div>
+      <div id="error-message-container"></div>
         <div class="row">
             <!-- Forms are the standard way to receive user inputted data.
          Learn more http://materializecss.com/forms.html-->
@@ -90,9 +119,25 @@
             </div>
             <div class="row">
                 <div class="input-field col s12 m6 l4">
+                    <input id="pollInterval" type="number" class="value validate" required>
+                    <label for="pollInterval" data-error="wrong" data-success="right">Aktualisierungsintervall</label>
+                    <span class="translate">Poll interval in seconds</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="translate">on save adapter restarts with new config immediately</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+                <div class="input-field col s12 m6 l4">
                     <input id="pollInterval" type="number" class="value validate">
                     <label for="pollInterval" data-error="wrong" data-success="right">Aktualisierungsintervall</label>
                     <span class="translate">Poll interval in seconds</span>
+                    <span class="helper-text" data-error="Invalid input" data-success=""></span>
                 </div>
             </div>
             <div class="row">
