@@ -167,6 +167,10 @@ We welcome contributions to the project and encourage users to report issues. He
 
 - This project is a private project and is *not* officially supported or endorsed by the Viessmann Werke GmbH & Co. KG, use at your own risk.
 
+**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**
+
+**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**
+
 ## Troubleshooting and Error Logs
 
 To troubleshoot common issues and access error logs, follow these steps:
@@ -176,7 +180,15 @@ To troubleshoot common issues and access error logs, follow these steps:
 
 - In case you have any further questions, please feel free to contact me via GitHub.
 
-## License
+## Troubleshooting Guide
+
+This guide provides instructions for troubleshooting common issues and accessing error logs in the ioBroker.viessmannapi project.
+
+**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**
+
+**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**
+
+**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**\n\nThis guide provides instructions for troubleshooting common issues and accessing error logs in the ioBroker.viessmannapi project.\n\n**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**\n\n## Troubleshooting Guide\n\nThis guide provides instructions for troubleshooting common issues and accessing error logs in the ioBroker.viessmannapi project.\n\n**For detailed troubleshooting instructions, please refer to the [ioBroker.viessmannapi Troubleshooting Guide](docs/troubleshooting.md).**\n\n## License
 The MIT License (MIT)
 
 Copyright (c) 2018 Thomas Vidic
